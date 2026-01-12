@@ -11,7 +11,7 @@ class Shippost < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/tomswokowski/shippost/releases/download/v0.0.1/shippost_0.0.1_Darwin_x86_64.tar.gz"
-      sha256 "1d874704fd3bdcca89e3ad3131e781e3db16e2075a05aa7ffb6a9ce9f3341b2e"
+      sha256 "a2cae067d66dae124108533ca40fe8239609340b92756e23f702fa7e9a8a13ab"
 
       def install
         bin.install "shippost"
@@ -19,7 +19,7 @@ class Shippost < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/tomswokowski/shippost/releases/download/v0.0.1/shippost_0.0.1_Darwin_arm64.tar.gz"
-      sha256 "14477195145d433c5b93409b73a06f9645a8ad8aa771fe30e86ddf94e7b55d78"
+      sha256 "bb1965d6f47dc11a6e0bb23693a5244173afc64b2c8552119e5843f0a109a12b"
 
       def install
         bin.install "shippost"
@@ -30,14 +30,14 @@ class Shippost < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/tomswokowski/shippost/releases/download/v0.0.1/shippost_0.0.1_Linux_x86_64.tar.gz"
-      sha256 "ff6744ce195fac5f1f33d88f9f80363267c9b4123405d8acfc43030fb7985605"
+      sha256 "e308ccc47a805bca9da8249a1280888df4eea001202e6932ebb03424084e1db5"
       def install
         bin.install "shippost"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/tomswokowski/shippost/releases/download/v0.0.1/shippost_0.0.1_Linux_arm64.tar.gz"
-      sha256 "f15feacb698e2690c77892d1284df8e2b0cf6ef53322aa282f4b6e4ab57af8cd"
+      sha256 "72e6680142650999017f9a94e0542d1e9d9c29e81895354e29ad86246c7f018d"
       def install
         bin.install "shippost"
       end
